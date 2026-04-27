@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.neon-text {
+  background-image: linear-gradient(
+    90deg,
+    #ff4fd8 0%,
+    #ff8ff1 18%,
+    #c77dff 42%,
+    #ff4fd8 66%,
+    #ff8ff1 84%,
+    #ff4fd8 100%
+  );
+  background-size: 300% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter:
+    drop-shadow(0 0 6px rgba(255, 0, 170, 0.6))
+    drop-shadow(0 0 18px rgba(255, 0, 170, 0.45))
+    drop-shadow(0 0 40px rgba(255, 0, 170, 0.25));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neon-text {
+    background-position: 50% 50%;
+  }
+}

@@ -301,7 +301,7 @@ function App() {
                             },
                           }}
                         >
-                          Love you Vlada
+                          Love you
                         </motion.span>
                       </motion.span>
                     </span>

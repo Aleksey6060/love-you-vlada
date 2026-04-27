@@ -51,8 +51,9 @@ function App() {
     const availW = Math.max(1, w - marginX * 2)
     const availH = Math.max(1, h - marginY * 2)
     const sizeBoost = isPortrait ? 0.82 : 0.98
+    const zoomLike = isPortrait ? 1.03 : 0.91
 
-    const scale = Math.min(availW / heartW, availH / heartH) * sizeBoost
+    const scale = Math.min(availW / heartW, availH / heartH) * sizeBoost * zoomLike
 
     return raw.map(({ x, y, seed }) => {
       const dx = (x - cx) * scale
@@ -222,7 +223,7 @@ function App() {
                         }}
                       >
                         <motion.span
-                          className="neon-text inline-block text-[clamp(12px,3.45vw,24px)] sm:text-[clamp(18px,3.2vw,42px)] font-bold tracking-[0em] sm:tracking-wide"
+                          className="neon-text inline-block text-[clamp(11px,3.2vw,22px)] sm:text-[clamp(14px,2.6vw,34px)]"
                           initial={{ backgroundPosition: '0% 50%' }}
                           animate={{
                             opacity: rebirthEnabled

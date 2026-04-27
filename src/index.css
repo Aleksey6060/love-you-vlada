@@ -44,6 +44,36 @@ body {
     drop-shadow(0 0 40px rgba(255, 0, 170, 0.25));
 }
 
+.cap-i {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.06em;
+  margin-right: 0.06em;
+}
+
+.cap-i::before,
+.cap-i::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.62em;
+  height: 0.1em;
+  border-radius: 999px;
+  background: rgba(255, 143, 241, 0.95);
+  box-shadow:
+    0 0 8px rgba(255, 0, 170, 0.55),
+    0 0 18px rgba(255, 0, 170, 0.35);
+}
+
+.cap-i::before {
+  top: -0.12em;
+}
+
+.cap-i::after {
+  bottom: -0.12em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .neon-text {
     background-position: 50% 50%;

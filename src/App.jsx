@@ -301,7 +301,7 @@ function App() {
                             },
                           }}
                         >
-                          I love you
+                          <span className="cap-i">I</span> love you
                         </motion.span>
                       </motion.span>
                     </span>

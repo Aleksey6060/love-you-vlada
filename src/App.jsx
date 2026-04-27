@@ -301,7 +301,7 @@ function App() {
                             },
                           }}
                         >
-                          Love you
+                          I love you
                         </motion.span>
                       </motion.span>
                     </span>
